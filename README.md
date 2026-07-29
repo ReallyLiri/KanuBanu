@@ -1,6 +1,6 @@
 # KanuBanu
 
-KanuBanu is a React application for organizing and managing kanban-style boards.
+KanuBanu is a very simple kanban board.
 
 The app is deployed at [kanubanu-app.web.app](https://kanubanu-app.web.app).
 
@@ -11,4 +11,9 @@ yarn install
 yarn dev
 ```
 
-Open the local URL shown by Vite in your browser.
+Deploy with firebase:
+
+```
+firebase login
+yarn deploy
+```
