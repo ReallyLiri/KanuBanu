@@ -9,15 +9,17 @@ export function AuthScreen({ error, onSignIn }: AuthScreenProps) {
   return (
     <main className={screen}>
       <div className="w-full max-w-[455px]">
-        <h1 className="mb-4 text-[clamp(38px,6vw,57px)] leading-[1.02] font-bold tracking-[-.06em]">
-          KanuBanu
-        </h1>
-        <img
-          src="/lim-sleep.png"
-          alt=""
-          aria-hidden="true"
-          className="pointer-events-none absolute top-[20%] select-none md:top-[5%]"
-        />
+        <div className="mb-4 flex flex-col items-center">
+          <img
+            src="/lim-sleep.png"
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none relative z-10 -mb-[clamp(54px,21.6vw,72px)] w-[min(72vw,320px)] translate-x-[27%] translate-y-[7%] select-none md:translate-x-[35%] md:translate-y-[12%]"
+          />
+          <h1 className="text-[clamp(38px,6vw,57px)] leading-[1.02] font-bold tracking-[-.06em]">
+            KanuBanu
+          </h1>
+        </div>
         <button
           className="mt-[29px] flex w-full cursor-pointer items-center justify-center gap-3 rounded-[9px] border border-[#7df9ff80] bg-[#171126] p-[15px] font-semibold text-[#f5efff] shadow-[0_0_24px_#7df9ff33] hover:bg-[#21193a]"
           onClick={onSignIn}

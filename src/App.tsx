@@ -52,7 +52,15 @@ function App() {
     <main className="min-h-screen bg-[radial-gradient(circle_at_15%_0%,#21113c_0,transparent_26%),#090714] bg-black font-sans text-[#f5efff]">
       <nav className="flex h-[75px] items-center justify-between border-b border-[#30264a] bg-[#100c1e]/90 px-5 backdrop-blur sm:px-[max(5vw,30px)]">
         <div className="flex items-center gap-[11px]">
-          <span className="font-bold tracking-[-.03em]">KanuBanu</span>
+          <div className="flex flex-col items-center">
+            <img
+              src="/lim-sleep.png"
+              alt=""
+              aria-hidden="true"
+              className="pointer-events-none relative z-10 -mb-[28px] h-[70px] w-[124px] translate-x-[30%] translate-y-[10%] object-cover object-bottom select-none"
+            />
+            <span className="font-bold tracking-[-.03em]">KanuBanu</span>
+          </div>
         </div>
         <div className="flex items-center gap-[11px] text-[13px] text-[#bdb5cf]">
           <span className="hidden sm:inline">
